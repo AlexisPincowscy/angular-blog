@@ -1,0 +1,28 @@
+.container__small-cards {
+    width: 600px;
+    margin-top: 14px;
+    /* border: 1px solid #ddd; */
+
+}
+.container__small-cards-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.small-card__photo > img {
+    width: 200px;
+    min-width: 200px;
+    margin-right: 10px;
+}
+
+.small-cards__title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0px;
+    font-size: 12px;
+}
+
+.container__small-card__separator{
+    margin-top: 10px;
+}
