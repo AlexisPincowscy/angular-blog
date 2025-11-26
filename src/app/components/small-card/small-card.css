@@ -7,19 +7,19 @@
 .container__small-cards-content {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
 }
 .small-card__photo > img {
-    width: 200px;
+    width: 250px;
     min-width: 200px;
-    margin-right: 10px;
+    /* margin-right: 10px; */
 }
 
 .small-cards__title{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 0px;
+    margin-left: 10px;
     font-size: 12px;
 }
 
