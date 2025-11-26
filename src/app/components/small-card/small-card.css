@@ -1,6 +1,7 @@
 .container__small-cards {
     width: 600px;
     margin-top: 14px;
+    margin-left: 10px;
     /* border: 1px solid #ddd; */
 
 }

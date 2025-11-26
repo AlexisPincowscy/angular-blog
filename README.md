@@ -1,59 +1,52 @@
-# Blog
+# Blog — Projeto Angular
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.5.
+Este é um pequeno projeto de blog construído com Angular, criado para demonstrar componentes reutilizáveis, roteamento e estilo responsivo. Abaixo estão as características principais do projeto, instruções rápidas para rodar localmente e dicas de contribuição.
 
-## Development server
+**Características:**
 
-To start a local development server, run:
+- **Componentes reutilizáveis:** `big-card` e `small-card` para listar conteúdo em destaque e pré-visualizações.
+- **Roteamento simples:** páginas separadas (home, contents, etc.) organizadas em `src/app/pages`.
+- **Estilo modular:** cada componente possui seu CSS local em `src/app/components/*` para facilitar manutenção.
+- **Assets e imagens:** use `src/assets/` para imagens locais; os componentes referenciam imagens por caminho relativo `assets/...`.
 
-```bash
+**Como rodar localmente:**
+
+- Instale dependências:
+
+```powershell
+npm install
+```
+
+- Rodar servidor de desenvolvimento:
+
+```powershell
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+- Abra `http://localhost:4200/` no navegador. O servidor fará live-reload ao salvar alterações.
 
-## Code scaffolding
+**Arquitetura e arquivos importantes:**
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+- `src/app/app.routes.ts` — configura o roteamento da aplicação.
+- `src/app/components/big-card/*` — componente de destaque com imagem grande e descrição.
+- `src/app/components/small-card/*` — componentes de pré-visualização usados em listas.
+- `src/assets/` — coloque imagens e arquivos estáticos aqui.
 
-```bash
-ng generate component component-name
-```
+**Sugestões para imagens dos cards:**
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+- Para evitar problemas de licenciamento com personagens da Marvel, você pode usar imagens próprias ou imagens livres de bancos como Unsplash (ex.: busque por "cosplay iron man" ou "superhero group"). Coloque os arquivos em `src/assets/` e aponte os `src` das `img` para `assets/nome-da-imagem.jpg`.
 
-```bash
-ng generate --help
-```
+**Contribuindo:**
 
-## Building
+- Faça um fork/branch, implemente as mudanças e abra um pull request com descrição clara.
+- Teste localmente com `ng serve` antes de submeter.
 
-To build the project run:
+Se quiser, posso também:
 
-```bash
-ng build
-```
+- adicionar instruções de build/CI (ex.: GitHub Actions) para deploy automático;
+- criar exemplos de imagens em `src/assets/` e atualizar os componentes para apontarem para elas;
+- gerar um `CHANGELOG.md` ou uma seção `Contributors`.
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+---
 
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Se quiser que eu faça o commit dessas mudanças e empurre para o repositório, diga e eu executo (`git add README.md && git commit -m "Update README with project features" && git push`).

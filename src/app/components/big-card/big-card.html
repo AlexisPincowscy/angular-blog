@@ -3,11 +3,13 @@
     <img src="{{photoCover}}" alt="Scenic placeholder" />
   </div>
   <div class="big-card__title">
-    <h1><a href="#">{{cardTitle}}</a></h1>
+    <h1><a [routerLink]="['contents', ID]">{{cardTitle}}</a></h1>
   </div>
   <div class="big-card__description">
     <p>
+      <a [routerLink]="['contents', ID]">
       {{cardDescription}}
+      </a>
     </p>
   </div>
 </div>
