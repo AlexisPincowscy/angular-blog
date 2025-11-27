@@ -8,5 +8,6 @@ export const routes: Routes = [
     {
         path: 'contents/:id',
         loadComponent: () => import('./pages/contents/contents').then(m => m.Contents),
-    }
+    },
+    {path: '**', redirectTo: ''}
 ];
